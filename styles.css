@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    max-height: 100vh;
+    font-family: sans-serif;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(550px, 1fr));
+    grid-template-areas: "trombone-image navigation";
+    column-gap: 30px;
+}
+
+#trombone-image {
+    width: 60%;
+    grid-area: trombone-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav {
+    grid-area: navigation;
+    width: 80%;
+}
+
+nav>ul {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    background-color: #1d1d1d;
+    width: 70%;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav>ul:hover {
+    background-color: #cfcfda;
+}
+
+nav>ul:hover>li>a {
+    color: black;
+    font-size: 110%;
+    background-color: white;
+}
+
+nav>ul>li>a:hover {
+    background-color: #ff8c00;
+}
+
+.foreward {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 15px;
+}
+
+.foreward>button {
+    background-color: #f1c40f;
+    transform: scale(1.2);
+    font-weight: bolder;
+    border: 2px solid #f1c40f;
+    padding: 5px;
+    margin-bottom: 5%;
+}
+
+.foreward>input {
+    width: 25%;
+    padding: 5px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#features .task {
+    display: grid;
+    grid-template-areas: 'icon text text text text text';
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+
+#features .task>.fa-solid {
+    grid-area: icon;
+    transform: scale(3);
+    color: #ff8c00;
+}
+
+#features .task>.text {
+    grid-area: text;
+}
+
+#features .last-container {
+    margin-bottom: 5%;
+}
+
+#how-it-works {
+    display: grid;
+    place-items: center;
+    margin-bottom: 5%;
+}
+
+#pricing {
+    display: grid;
+    grid-template-areas: 'tenor bass valve';
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    padding-bottom: 10%;
+
+}
+
+#pricing>div>h3,
+#pricing>div>p {
+    text-align: center;
+}
+
+#pricing a {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: #f1c40f;
+    padding: 5%;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 2%;
+    max-width: 50%;
+    margin-left: 23%;
+    margin-bottom: 10%;
+}
+
+#pricing div {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 0;
+}
+
+#pricing h2 {
+    background-color: rgb(235, 234, 234);
+    padding: 2%;
+    display: grid;
+    place-items: center;
+
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    #trombone-image {
+        width: 300px;
+
+    }
+
+    nav {
+        position: relative;
+        left: -230px;
+        top: 50px;
+        margin-bottom: 20%;
+    }
+
+    nav>ul {
+        display: grid;
+        width: 150px;
+    }
+
+    .foreward>input {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .foreward h2 {
+        text-align: center;
+    }
+
+    #how-it-works > iframe {
+        display: grid;
+        width: 350px;
+    }
+
+    #pricing {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
