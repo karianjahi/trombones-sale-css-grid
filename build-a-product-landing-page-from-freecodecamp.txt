@@ -1,0 +1,350 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="trombones instrument with a side statement original Trombones">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+            <!-- <ul>
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#how-it-works">How It Works</a></li>
+                <li class="nav-link"><a href="#pricing">Pricing</a></li>
+            </ul> -->
+        </nav>
+    </header>
+    <main>
+        <div class="engage">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+                <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="GET STARTED">
+            </form>
+        </div>
+        <section id="features">
+            <div class="grouped-features">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <div class="feature">
+                    <h2>Premium Materials</h2>
+                    <p>
+                        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase.
+                    </p>
+                </div>
+            </div>
+            <div class="grouped-features">
+                <i class="fa-solid fa-truck"></i>
+                <div class="feature">
+                    <h2>Fast Shipping</h2>
+                    <p>
+                        We make sure you receive your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied
+                    </p>
+                </div>
+            </div>
+            <div class="grouped-features">
+                <i class="fa-solid fa-battery-full"></i>
+                <div class="feature">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="" frameborder="0" id="video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="voice">
+                <h2>TENOR TROMBONE</h2>
+                <h3>$600</h3>
+                <p>Good for beginners</p>
+                <p>Excellent sound quality</p>
+                <p>Great for Jazz Bands</p>
+                <p>Nice and shiny</p>
+                <a href="#">SELECT</a>
+            </div>
+            <div class="voice">
+                <h2>BASS TROMBONE</h2>
+                <h3>$900</h3>
+                <p>Sound quality is unmatched</p>
+                <p>Best for professionals</p>
+                <p>Absolutely stunning</p>
+                <p>Durable and long lasting</p>
+                <a href="#">SELECT</a>
+            </div>
+            <div class="voice">
+                <h2>VALVE TROMBONE</h2>
+                <h3>$1200</h3>
+                <p>Plays similar to a Trumpet</p>
+                <p>Great for Jazz Bands</p>
+                <p>Beautiful in sound and appearance</p>
+                <p>Just amazing</p>
+                <a href="#">SELECT</a>
+            </div>
+        </section>
+        <footer>
+            <div class="important-info">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2016,</p>
+                <p>Original Trombones</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+#header-img {
+    display: grid;
+    max-width: 300px;
+
+    place-items: center;
+}
+
+#nav-bar {
+    width: 400px;
+}
+
+#nav-bar {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 800px;
+}
+
+#nav-bar>a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar>a:hover {
+    background-color: #2b2a2a;
+    color: white;
+    padding: 10px;
+}
+
+.engage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#email {
+    height: 25px;
+    width: 250px;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    background-color: #f1c40f;
+    font-weight: bolder;
+    border: 1px solid #f1c40f;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    max-width: 800px;
+    gap: 50px;
+}
+
+.grouped-features {
+    display: grid;
+    grid-template-columns: 1fr minmax(250px, 6fr);
+    place-items: center;
+}
+
+.feature {
+    line-height: 2em;
+}
+
+.fa-solid {
+    color: darkorange;
+    transform: scale(2.5);
+}
+
+#how-it-works {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+iframe {
+    display: grid;
+    width: 400px;
+    height: 300px;
+    justify-items: flex-end;
+    margin-bottom: 30px;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    line-height: 2em;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    display: grid;
+    place-items: end;
+}
+
+.voice {
+    border: 1px solid grey;
+    padding: 0px;
+    width: 300px;
+    height: 350px;
+}
+
+.voice>h2 {
+    background-color: rgb(243, 240, 240);
+}
+
+.voice>h3 {
+    margin: 20px 0 20px 0;
+}
+
+.voice>p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.voice>a {
+    text-decoration: none;
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.voice a:hover {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-family: monaco, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
+    .engage {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
+    .engage h2 {
+        display: flex;
+        max-width: 400px;
+        text-align: center;
+
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    #features>.grouped-features {
+        display: flex;
+        gap: 30px;
+        text-align: justify;
+    }
+
+    #how-it-works {
+     display: grid;
+     grid-template-columns: 1fr;
+     place-items: center;
+     width: 100px;
+     max-width: 200px;
+    }
+    iframe {
+        position: relative;
+        left: 160px;
+        right: -860px;
+    }
+    
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+** end of styles.css **
+
