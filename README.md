@@ -1,5 +1,7 @@
 # 🎺 Trombone Sales Landing Page
 
+- To quickly see how the page renders, you can click [here](https://karianjahi.github.io/trombones-sale-css-grid/)
+
 ## 📌 Overview
 A **responsive landing page** for selling trombones, built to demonstrate:
 - 🖋 **HTML5** semantic structure
@@ -41,4 +43,4 @@ A **responsive landing page** for selling trombones, built to demonstrate:
 2. 🌐 Open `index.html` in your browser
 3. 📏 Resize the window to see the **responsive layout**
 
-- Note: click [here](https://karianjahi.github.io/trombones-sale-css-grid/) to see how the page renders
+
